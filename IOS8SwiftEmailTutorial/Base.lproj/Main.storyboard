@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -28,6 +28,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="squareairplaneicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-K5-Wli">
+                                <rect key="frame" x="9" y="24" width="575" height="551"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-OS-Wmm">
                                 <rect key="frame" x="261" y="285" width="78" height="30"/>
                                 <state key="normal" title="Send Email">
@@ -43,13 +46,29 @@
                             <constraint firstItem="Hbb-OS-Wmm" firstAttribute="centerX" secondItem="zsj-Sr-OGr" secondAttribute="centerX" id="1po-hF-v1A"/>
                             <constraint firstItem="doL-4C-E9S" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="298-4P-hsv"/>
                             <constraint firstItem="zsj-Sr-OGr" firstAttribute="top" secondItem="doL-4C-E9S" secondAttribute="bottom" constant="8" symbolic="YES" id="8W3-og-ew9"/>
+                            <constraint firstAttribute="centerX" secondItem="ipr-K5-Wli" secondAttribute="centerX" id="H7L-Yj-H5A"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ipr-K5-Wli" secondAttribute="bottom" constant="11" id="HCq-1T-oAT"/>
+                            <constraint firstAttribute="centerY" secondItem="ipr-K5-Wli" secondAttribute="centerY" id="LQQ-Yn-Oud"/>
+                            <constraint firstItem="ipr-K5-Wli" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-7" id="UW3-Nv-TE8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ipr-K5-Wli" secondAttribute="bottom" constant="25" id="bPr-Dh-MZ2"/>
+                            <constraint firstItem="ipr-K5-Wli" firstAttribute="trailing" secondItem="doL-4C-E9S" secondAttribute="trailing" id="cSf-Qw-fGI"/>
                             <constraint firstItem="zsj-Sr-OGr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cn7-Dh-M4S"/>
+                            <constraint firstItem="ipr-K5-Wli" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="4" id="hpg-Tj-PV7"/>
                             <constraint firstItem="doL-4C-E9S" firstAttribute="trailing" secondItem="zsj-Sr-OGr" secondAttribute="trailing" id="qX6-Aa-X7n"/>
                             <constraint firstItem="doL-4C-E9S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="21" id="qnV-a3-XBP"/>
                             <constraint firstItem="zsj-Sr-OGr" firstAttribute="leading" secondItem="doL-4C-E9S" secondAttribute="leading" id="tzu-B7-zDd"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Hbb-OS-Wmm" secondAttribute="bottom" constant="285" id="whB-HX-Xkp"/>
                             <constraint firstItem="Hbb-OS-Wmm" firstAttribute="bottom" secondItem="zsj-Sr-OGr" secondAttribute="bottom" constant="76" id="zIK-kC-Ta3"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UW3-Nv-TE8"/>
+                                <exclude reference="cSf-Qw-fGI"/>
+                                <exclude reference="hpg-Tj-PV7"/>
+                                <exclude reference="HCq-1T-oAT"/>
+                                <exclude reference="bPr-Dh-MZ2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="body" destination="zsj-Sr-OGr" id="pDI-iE-3UJ"/>
@@ -61,4 +80,7 @@
             <point key="canvasLocation" x="-10" y="364"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="squareairplaneicon.png" width="1138" height="902"/>
+    </resources>
 </document>

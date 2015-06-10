@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06AFEEBB1B27EBB300D4DA40 /* squareairplaneicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 06AFEEBA1B27EBB300D4DA40 /* squareairplaneicon.png */; };
 		E261C2261A3B856200045CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E261C2251A3B856200045CFC /* AppDelegate.swift */; };
 		E261C2281A3B856200045CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E261C2271A3B856200045CFC /* ViewController.swift */; };
 		E261C22B1A3B856200045CFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E261C2291A3B856200045CFC /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06AFEEBA1B27EBB300D4DA40 /* squareairplaneicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squareairplaneicon.png; path = IOS8SwiftEmailTutorial/Images.xcassets/squareairplaneicon.png; sourceTree = "<group>"; };
 		E261C2201A3B856200045CFC /* IOS8SwiftEmailTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS8SwiftEmailTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E261C2241A3B856200045CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E261C2251A3B856200045CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +58,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06C98B011B228CB700208897 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				06AFEEBA1B27EBB300D4DA40 /* squareairplaneicon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		E261C2171A3B856200045CFC = {
 			isa = PBXGroup;
 			children = (
+				06C98B011B228CB700208897 /* images */,
 				E261C2221A3B856200045CFC /* IOS8SwiftEmailTutorial */,
 				E261C2381A3B856300045CFC /* IOS8SwiftEmailTutorialTests */,
 				E261C2211A3B856200045CFC /* Products */,
@@ -194,6 +205,7 @@
 			files = (
 				E261C22B1A3B856200045CFC /* Main.storyboard in Resources */,
 				E261C2301A3B856200045CFC /* LaunchScreen.xib in Resources */,
+				06AFEEBB1B27EBB300D4DA40 /* squareairplaneicon.png in Resources */,
 				E261C22D1A3B856200045CFC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +417,7 @@
 				E261C2411A3B856300045CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E261C2421A3B856300045CFC /* Build configuration list for PBXNativeTarget "IOS8SwiftEmailTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				E261C2441A3B856300045CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
