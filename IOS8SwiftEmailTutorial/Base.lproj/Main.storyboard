@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsj-Sr-OGr">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zsj-Sr-OGr">
                                 <rect key="frame" x="16" y="79" width="568" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -31,9 +31,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="squareairplaneicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-K5-Wli">
                                 <rect key="frame" x="9" y="24" width="575" height="551"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-OS-Wmm">
-                                <rect key="frame" x="261" y="285" width="78" height="30"/>
-                                <state key="normal" title="Send Email">
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-OS-Wmm">
+                                <rect key="frame" x="225" y="275" width="150" height="50"/>
+                                <state key="normal" title="Report Noise" backgroundImage="sm-oval.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -51,22 +52,27 @@
                             <constraint firstAttribute="centerY" secondItem="ipr-K5-Wli" secondAttribute="centerY" id="LQQ-Yn-Oud"/>
                             <constraint firstItem="ipr-K5-Wli" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-7" id="UW3-Nv-TE8"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ipr-K5-Wli" secondAttribute="bottom" constant="25" id="bPr-Dh-MZ2"/>
+                            <constraint firstAttribute="centerX" secondItem="Hbb-OS-Wmm" secondAttribute="centerX" id="bmK-ij-ypB"/>
                             <constraint firstItem="ipr-K5-Wli" firstAttribute="trailing" secondItem="doL-4C-E9S" secondAttribute="trailing" id="cSf-Qw-fGI"/>
                             <constraint firstItem="zsj-Sr-OGr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cn7-Dh-M4S"/>
+                            <constraint firstAttribute="centerY" secondItem="Hbb-OS-Wmm" secondAttribute="centerY" id="hU8-aD-2ub"/>
                             <constraint firstItem="ipr-K5-Wli" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="4" id="hpg-Tj-PV7"/>
                             <constraint firstItem="doL-4C-E9S" firstAttribute="trailing" secondItem="zsj-Sr-OGr" secondAttribute="trailing" id="qX6-Aa-X7n"/>
                             <constraint firstItem="doL-4C-E9S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="21" id="qnV-a3-XBP"/>
                             <constraint firstItem="zsj-Sr-OGr" firstAttribute="leading" secondItem="doL-4C-E9S" secondAttribute="leading" id="tzu-B7-zDd"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Hbb-OS-Wmm" secondAttribute="bottom" constant="285" id="whB-HX-Xkp"/>
-                            <constraint firstItem="Hbb-OS-Wmm" firstAttribute="bottom" secondItem="zsj-Sr-OGr" secondAttribute="bottom" constant="76" id="zIK-kC-Ta3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Hbb-OS-Wmm" secondAttribute="bottom" priority="1" constant="267" id="whB-HX-Xkp"/>
+                            <constraint firstItem="Hbb-OS-Wmm" firstAttribute="bottom" secondItem="zsj-Sr-OGr" secondAttribute="bottom" priority="1" constant="76" id="zIK-kC-Ta3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="UW3-Nv-TE8"/>
                                 <exclude reference="cSf-Qw-fGI"/>
                                 <exclude reference="hpg-Tj-PV7"/>
+                                <exclude reference="1po-hF-v1A"/>
+                                <exclude reference="zIK-kC-Ta3"/>
                                 <exclude reference="HCq-1T-oAT"/>
                                 <exclude reference="bPr-Dh-MZ2"/>
+                                <exclude reference="whB-HX-Xkp"/>
                             </mask>
                         </variation>
                     </view>
@@ -81,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="sm-oval.png" width="150" height="75"/>
         <image name="squareairplaneicon.png" width="1138" height="902"/>
     </resources>
 </document>
