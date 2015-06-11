@@ -15,12 +15,14 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIT
   @IBOutlet var body: UITextView!
   
   @IBAction func sendMail(sender: AnyObject) {
-    var picker = MFMailComposeViewController()
-    picker.mailComposeDelegate = self
-    picker.setSubject(subject.text)
-    picker.setMessageBody(body.text, isHTML: true)
+    var byro_rules = MFMailComposeViewController()
+    byro_rules.mailComposeDelegate = self
+    byro_rules.setSubject("There was a really loud airplane. Hail_byro")
+    var emailtoadressesList: [String] = [" sfocop@flysfo.com"]
+    byro_rules.setToRecipients(emailtoadressesList)
+    byro_rules.setMessageBody(body.text, isHTML: true)
     
-    presentViewController(picker, animated: true, completion: nil)
+    presentViewController(byro_rules, animated: true, completion: nil)
   }
   
   override func viewDidLoad() {
