@@ -17,10 +17,21 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIT
   @IBAction func sendMail(sender: AnyObject) {
     var byro_rules = MFMailComposeViewController()
     byro_rules.mailComposeDelegate = self
-    byro_rules.setSubject("There was a really loud airplane. Hail_byro")
+    byro_rules.setSubject("an airplane flew to low")
     var emailtoadressesList: [String] = [" sfocop@flysfo.com"]
     byro_rules.setToRecipients(emailtoadressesList)
-    byro_rules.setMessageBody(body.text, isHTML: true)
+    var date = NSDate()
+    let dateFormatter = NSDateFormatter()//3
+    
+    var theDateFormat = NSDateFormatterStyle.ShortStyle //5
+    let theTimeFormat = NSDateFormatterStyle.ShortStyle//6
+    
+    dateFormatter.dateStyle = theDateFormat//8
+    dateFormatter.timeStyle = theTimeFormat//9
+    
+    var bodymessage = "I would like to inform you that there was a very noisy airplane that flew by at : " + dateFormatter.stringFromDate(date)+"."
+    byro_rules.setMessageBody(bodymessage,
+        isHTML: true)
     
     presentViewController(byro_rules, animated: true, completion: nil)
   }
