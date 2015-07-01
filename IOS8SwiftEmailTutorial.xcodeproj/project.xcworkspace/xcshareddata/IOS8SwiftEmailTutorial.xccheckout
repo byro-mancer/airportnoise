@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D418A777-F25F-4C9F-85B5-9AB8E282F3F8</string>
 	<key>IDESourceControlProjectName</key>
-	<string>IOS8SwiftEmailTutorial</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>562641B8B178424CB1713B61AC99850935218134</key>
 		<string>github.com:byro-mancer/airportnoise.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS8SwiftEmailTutorial.xcodeproj</string>
+	<string>IOS8SwiftEmailTutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>562641B8B178424CB1713B61AC99850935218134</key>
